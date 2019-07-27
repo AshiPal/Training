@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/Movies" xmlns:zen="http://www.zensar.com/Movies" elementFormDefault="qualified">
+	<element name="XMLSchema">
+		<complexType>
+			<sequence>
+				<element name="Order" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="OrderID">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="OI-[0-9]{4}"/>
+									</restriction>
+								</simpleType>
+							</element>
+							
+							<element name="CustomerID">
+								<simpleType>
+									<restriction base="string">
+										<pattern value="C-[0-9]{6}"/>
+									</restriction>
+								</simpleType>
+							</element>
+							
+							<element name="CustomerName">
+								<simpleType>
+									<restriction base="string">
+									<pattern value= "[A-Z][a-z]+ [A-Z][a-z]+"/>
+										<minLength value="10"></minLength>
+										<maxLength value="100"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							
+							<element name="Plan" minOccurs="1" maxOccurs="unbounded" >
+								<simpleType>
+									<restriction base="string">
+									</restriction>
+								</simpleType>
+							</element>
+							
+							<element name="Service">
+								<complexType>
+									<attribute name="Service" type="string" use="required"></attribute>
+								</complexType>
+							</element>
+							
+							<element name="BillingCycle">
+								<simpleType>
+									<restriction base="string">
+										<enumeration value="monthly"/>
+										<enumeration value="quarterly"/>
+										<enumeration value="half-yearly"/>
+										<enumeration value="yearly"/>
+									</restriction>
+								</simpleType>
+							</element>
+							
+							<element name="BillingAddress" minOccurs="0" maxOccurs="1"></element>
+							
+							<element name="ServiceAddress">
+								<complexType>
+									<attribute name="ServiceAddress" type="string" use="required"></attribute>
+								</complexType>
+							</element>
+							
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

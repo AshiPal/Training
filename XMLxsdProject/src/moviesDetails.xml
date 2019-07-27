@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zen:Movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zen="http://www.zensar.com/Movies" xsi:schemaLocation="http://www.zensar.com/Movies Movies.xsd ">
+  <zen:Movie>
+    <zen:code>5004</zen:code>
+    <zen:title>Kabir Singh</zen:title>
+    <zen:release-date>2019-06-13</zen:release-date>
+    <zen:theater-name>PVRCinemas</zen:theater-name>
+    <zen:city>Pune</zen:city>
+    <zen:city>Bhopal</zen:city>
+  </zen:Movie>
+  
+  <zen:Movie>
+    <zen:code>5045</zen:code>
+    <zen:title>Arjun Reddy</zen:title>
+    <zen:theater-name>Cinepolis</zen:theater-name>
+  </zen:Movie>
+</zen:Movies>

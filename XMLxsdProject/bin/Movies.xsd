@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.zensar.com/Movies" xmlns:zen="http://www.zensar.com/Movies" elementFormDefault="qualified">
+	<element name="Movies">
+		<complexType>
+			<sequence>
+				<element name="Movie" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="code">
+								<simpleType>
+									<restriction base="int">
+										<totalDigits value="4"></totalDigits>
+										<minInclusive value="5001"></minInclusive>
+										<maxExclusive value="6000"></maxExclusive>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="title" type="string"></element>
+							<element name="release-date" type="date" minOccurs="0" maxOccurs="1"></element>
+							<element name="theater-name">
+								<simpleType>
+									<restriction base="string">
+										<minLength value="4"></minLength>
+										<maxLength value="20"></maxLength>
+									</restriction>
+								</simpleType>
+							</element>
+							<element name="city" minOccurs="0" maxOccurs="unbounded"></element>
+						</sequence>
+					</complexType>
+				</element>
+			</sequence>
+		</complexType>
+	</element>
+</schema>

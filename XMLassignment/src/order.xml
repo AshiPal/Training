@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zen:XMLSchema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zen="http://www.zensar.com/Movies" xsi:schemaLocation="http://www.zensar.com/Movies XMLSchema.xsd ">
+  <zen:Order>
+  	<zen:OrderID>OI-1234</zen:OrderID>
+  	<zen:CustomerID>C-123456</zen:CustomerID>
+  	<zen:CustomerName>Aikansh Tiwari</zen:CustomerName>
+    <zen:Plan>plan123</zen:Plan>
+    <zen:Service Service="service123"/>
+    <zen:BillingCycle>monthly</zen:BillingCycle>
+    <zen:BillingAddress>billingADD</zen:BillingAddress>
+    <zen:ServiceAddress ServiceAddress="servicADD"/>
+  </zen:Order>
+  
+    <zen:Order>
+  	<zen:OrderID>OI-4321</zen:OrderID>
+  	<zen:CustomerID>C-654321</zen:CustomerID>
+  	<zen:CustomerName>Khushboo Bhasne</zen:CustomerName>
+    <zen:Plan>plan123</zen:Plan>
+    <zen:Service Service="service1"/>
+    <zen:BillingCycle>yearly</zen:BillingCycle>
+    <zen:ServiceAddress ServiceAddress="servicADD123Khushboo"/>
+  </zen:Order>
+</zen:XMLSchema>
